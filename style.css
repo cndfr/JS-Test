@@ -1,43 +1,103 @@
 body {
-  background: DimGray;
+  background: #222;
   color: white;
   font-family: sans-serif;
   font-size: 20px;
+  font-weight: 300;
+}
+
+nav {
+  margin: 12px;
+  margin-top: 48px;
+}
+
+main {
+  margin: 24px;
+}
+
+a {
+  color: DodgerBlue;
+  text-decoration: none;
+  padding-left: -8px;
+}
+
+a:hover {
+  color: LightSkyBlue;
 }
 
 .search {
   width: 100%;
+  height: 36px;
+  border: none;
+  font-size: 14px;
+  border-radius: 4px;
+  background-color: #333;
+  padding-left: 24px;
 }
 
-.add-transaction {
+.search_container {
+  position: relative;
+}
+
+.icon {
+  font-family: "Material Icons";
+}
+
+.search_icon {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  color: #666;
+}
+
+.back_icon {
+  font-size: 36px;
+  position: relative;
+  top: 10px;
+}
+
+.search:focus {
+  background-color: #444;
+}
+
+.add_transaction {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 64px;
   z-index: 100;
-  background: MediumTurquoise;
+  color: white;
+  background: DodgerBlue;
   text-decoration: none;
   border: none;
   display: inline-block;
   font-size: 20px;
 }
 
+.add_transaction:hover {
+  background-color: LightSkyBlue;
+}
+
+.transaction_list {
+  margin-top: 24px;
+}
+
 .transaction {
-  border-bottom: solid 1px darkgrey;
-  padding: 16px;
+  border-bottom: solid 1px #444;
+  padding: 16px 0 16px;
 }
 
-.transaction-main {
+.transaction_main {
 
 }
 
-.transaction-details {
+.transaction_details {
   font-size: 14px;
   opacity: 0.5;
   margin-top: 4px;
 }
 
-.sum, .balance-snapshot {
+.sum, .balance_snapshot {
   float: right;
 }
