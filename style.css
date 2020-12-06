@@ -35,7 +35,7 @@ a:hover {
   padding-left: 24px;
 }
 
-.search_container {
+.search-container {
   position: relative;
 }
 
@@ -43,14 +43,14 @@ a:hover {
   font-family: "Material Icons";
 }
 
-.search_icon {
+.search-icon {
   position: absolute;
   top: 8px;
   left: 8px;
   color: #666;
 }
 
-.back_icon {
+.back-icon {
   font-size: 36px;
   position: relative;
   top: 10px;
@@ -60,7 +60,7 @@ a:hover {
   background-color: #444;
 }
 
-.add_transaction {
+.add-transaction-button {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -75,11 +75,11 @@ a:hover {
   font-size: 20px;
 }
 
-.add_transaction:hover {
+.add-transaction-button:hover {
   background-color: LightSkyBlue;
 }
 
-.transaction_list {
+.transaction-list {
   margin-top: 24px;
 }
 
@@ -88,16 +88,16 @@ a:hover {
   padding: 16px 0 16px;
 }
 
-.transaction_main {
+.transaction-main {
 
 }
 
-.transaction_details {
+.transaction-details {
   font-size: 14px;
   opacity: 0.5;
   margin-top: 4px;
 }
 
-.sum, .balance_snapshot {
+.sum, .balance-snapshot {
   float: right;
 }
