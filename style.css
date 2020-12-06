@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background: #222;
   color: white;
@@ -23,6 +29,66 @@ a {
 
 a:hover {
   color: LightSkyBlue;
+}
+
+input {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 56px;
+  background: none;
+  border: none;
+  border-bottom: solid 1px #444;
+  font-size: 16px;
+  color: white;
+}
+
+input::placeholder {
+  color: #555;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.input-payee {
+  float: left;
+  width: 60%;
+  font-size: 24px;
+}
+
+.input-sum-wrapper {
+  float: right;
+  width: 40%;
+  display: inline-block;
+  position: relative;
+}
+
+.input-sum {
+  text-align: right;
+  font-size: 24px;
+  color: red;
+  display: inline-block;
+  padding-right: 56px;
+}
+
+.input-sum::placeholder {
+  color: red;
+}
+
+.rub::after {
+  content: 'RUB';
+  font-size: 24px;
+  display: inline-block;
+  position: absolute;
+  color: red;
+  right: 0px;
+  top: 15px;
+}
+
+.input-account {
+  margin-top: 48px;
 }
 
 .search {
@@ -51,9 +117,9 @@ a:hover {
 }
 
 .back-icon {
-  font-size: 36px;
+  font-size: 48px;
   position: relative;
-  top: 10px;
+  top: 16px;
 }
 
 .search:focus {
@@ -71,7 +137,7 @@ a:hover {
   background: DodgerBlue;
   text-decoration: none;
   border: none;
-  display: inline-block;
+  display: block;
   font-size: 20px;
 }
 

@@ -10,3 +10,5 @@ var transaction = {
 }
 
 console.log(Object.getOwnPropertyDescriptor(transaction, "sum"));
+
+document.getElementById("input-date").value = Date();
