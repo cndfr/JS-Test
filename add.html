@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>CNDFR JS Test</title>
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/select.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <script src="https://kit.fontawesome.com/a7e5f8e78a.js" crossorigin="anonymous"></script>
@@ -16,17 +17,39 @@
       <a class="done-button" href="#">Done</a>
     </nav>
     <main>
-      <input class="input-payee" type="text" name="" value="" placeholder="Payee">
+      <input class="input input-payee" type="text" name="" value="" placeholder="Payee">
       <div class="input-sum-wrapper rub">
-        <input class="input-sum" id="input-sum" type="number" name="" value="" placeholder="0,00">
+        <input class="input input-sum" id="input-sum" type="number" name="" value="" pattern="[0-9]" placeholder="0,00">
       </div>
-      <input class="input-category" type="text" name="" value="" placeholder="Category">
-      <input class="input-date" id="input-date" type="datetime-local" name="" value="">
-      <input class="input-notes-tags" type="text" name="" value="" placeholder="Notes & #Tags">
-      <input class="input-account" type="text" name="" value="" placeholder="Account">
-      <input class="input-inc-exp" type="radio" name="" value="" placeholder="Income/Expence">
-      <input class="input-currency" type="text" name="" value="" placeholder="Currency">
+      <input class="input input-category" type="text" name="" value="" placeholder="Category">
+      <input class="input input-date" id="input-date" type="datetime-local" name="" value="">
+      <input class="input input-notes-tags" type="text" name="" value="" placeholder="Notes & #Tags">
+      <div class="input custom-select input-inc-exp">
+        <select class="input-inc-exp" type="radio" name="" value="" placeholder="Income/Expence">
+          <option value="">Expence</option>
+          <option value="">Expence</option>
+          <option value="">Income</option>
+        </select>
+      </div>
+      <div class="input custom-select input-account">
+        <select class="input-account" type="text" name="" value="" placeholder="Account">
+          <option value="">Rocket Bank</option>
+          <option value="">Rocket Bank</option>
+          <option value="">Tinkoff</option>
+          <option value="">BSPB</option>
+          <option value="">Cash</option>
+        </select>
+      </div>
+      <div class="input custom-select input-currency">
+        <select class="input-currency" type="text" name="" value="" placeholder="Currency">
+          <option value="">RUB</option>
+          <option value="">RUB</option>
+          <option value="">USD</option>
+          <option value="">EUR</option>
+        </select>
+      </div>
     </main>
-    <script src="main.js" type="text/javascript"></script>
+    <script src="scripts/main.js" type="text/javascript"></script>
+    <script src="scripts/select.js" type="text/javascript"></script>
   </body>
 </html>

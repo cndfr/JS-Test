@@ -1,6 +1,6 @@
 window.setInterval(function () {
   location.reload();
-}, 2000);
+}, 20000000);
 
 
 var transaction = {

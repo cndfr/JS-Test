@@ -13,7 +13,7 @@ body {
 }
 
 nav {
-  margin: 12px;
+  margin: 24px;
   margin-top: 48px;
 }
 
@@ -31,7 +31,7 @@ a:hover {
   color: LightSkyBlue;
 }
 
-input {
+.input {
   display: block;
   margin: 0;
   padding: 0;
@@ -44,25 +44,27 @@ input {
   color: white;
 }
 
-input::placeholder {
+.input::placeholder {
   color: #555;
 }
 
-input[type=number]::-webkit-inner-spin-button {
+.input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
 .input-payee {
   float: left;
-  width: 60%;
+  width: 70%;
   font-size: 24px;
+  margin-top: 24px;
 }
 
 .input-sum-wrapper {
   float: right;
-  width: 40%;
+  width: 30%;
   display: inline-block;
   position: relative;
+  margin-top: 24px;
 }
 
 .input-sum {
@@ -79,15 +81,15 @@ input[type=number]::-webkit-inner-spin-button {
 
 .rub::after {
   content: 'RUB';
+  color: red;
   font-size: 24px;
   display: inline-block;
   position: absolute;
-  color: red;
   right: 0px;
   top: 15px;
 }
 
-.input-account {
+.input-inc-exp {
   margin-top: 48px;
 }
 
@@ -103,6 +105,7 @@ input[type=number]::-webkit-inner-spin-button {
 
 .search-container {
   position: relative;
+  margin-top: 16px;
 }
 
 .icon {
@@ -117,9 +120,8 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .back-icon {
-  font-size: 48px;
   position: relative;
-  top: 16px;
+  top: 3px;
 }
 
 .search:focus {
@@ -155,7 +157,6 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .transaction-main {
-
 }
 
 .transaction-details {
@@ -165,5 +166,12 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .sum, .balance-snapshot {
+  float: right;
+}
+
+.cancel-button {
+}
+
+.done-button {
   float: right;
 }
